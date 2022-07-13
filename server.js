@@ -35,6 +35,7 @@ async function startServer() {
     context: contextMiddleware,
     cache: "bounded",
     csrfPrevention: true,
+    introspection: false,
     plugins: [
       ApolloServerPluginDrainHttpServer({ httpServer }),
       {
