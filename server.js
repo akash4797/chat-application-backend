@@ -10,6 +10,7 @@ import { createServer } from "http";
 import { WebSocketServer } from "ws";
 import { useServer } from "graphql-ws/lib/use/ws";
 import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
+import "dotenv/config";
 
 const schema = makeExecutableSchema({ typeDefs, resolvers });
 
