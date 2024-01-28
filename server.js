@@ -34,8 +34,8 @@ async function startServer() {
     schema,
     context: contextMiddleware,
     cache: "bounded",
-    csrfPrevention: true,
-    introspection: false,
+    // csrfPrevention: true,
+    // introspection: false,
     plugins: [
       ApolloServerPluginDrainHttpServer({ httpServer }),
       {
